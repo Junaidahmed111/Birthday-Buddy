@@ -10,7 +10,7 @@ const Header = () => {
       <div className="w-screen px-10 py-5 ">
         {/* main */}
         <div className="flex flex-row justify-between">
-          <div className="flex">
+          <div className="flex items-center pt-2">
             <div>
               <Image
                 className="rounded-3xl"
