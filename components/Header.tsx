@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import logo from "@/public/assets/logo.jpg";
 import Image from "next/image";
 import Link from "next/link";
-import { BsChevronDown } from "react-icons/bs";
-import { AiOutlineArrowRight, AiOutlineClose } from "react-icons/ai";
+
+import { AiOutlineClose } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = () => {
@@ -32,75 +32,77 @@ const Header = () => {
           </div>
         </div>
       </div>
-
-
       <div className="hidden lg:flex flex-[0.6] items-center justify-center gap-x-3 lg:text-lg text-white ">
-        <Link href="#" className="text-lg no-underline">
+        <Link href="#users" className="text-lg no-underline hover:text-colorB">
+          <span>Users</span>
+        </Link>
+        <Link
+          href="#features"
+          className="text-lg no-underline hover:text-colorB"
+        >
           <span>Features</span>
         </Link>
-        <Link href="#" className="text-lg no-underline">
-          <span>Premium</span>
+        <Link href="#wishes" className="text-lg no-underline hover:text-colorB">
+          <span>Wishes</span>
         </Link>
-        <Link href="#" className="text-lg no-underline">
-          <span>Custom Bot</span>
-        </Link>
-        <Link href="#" className="text-lg no-underline">
-          <span>Support Server</span>
+        <Link
+          href="#get-started"
+          className="text-lg no-underline hover:text-colorB"
+        >
+          <span>Get-started</span>
         </Link>
       </div>
-
-
-
-
       <div className="hidden lg:flex flex-[0.2] items-center justify-end gap-x-3 lg:order-2 lg:text-lg ">
         <span className="bg-colorB text-white font-bold text-sm rounded-xl items-center content-center cursor-pointer px-5 py-3">
           Login
         </span>
       </div>
-
-
-
       <div className="flex order-3 lg:hidden md:order-non">
         <button className="2xl:hidden z-20" onClick={handleMenuToggle}>
           {menuOpen ? (
-            <AiOutlineClose size="30px" />
+            <AiOutlineClose size="30px" color="#fff" />
           ) : (
-            <RxHamburgerMenu size="30px" />
+            <RxHamburgerMenu size="30px" color="#fff" />
           )}
         </button>
       </div>
       {menuOpen && (
-        <div className="lg:hidden absolute text-right inset-0 w-full top-24 h-fit flex flex-col p-4 space-y-1 bg-slate-500">
-          {/* <div>
-            <Link href="/">
-              <Image
-                className="w-[60px] 2xl:w-[70px]"
-                src={logo}
-                width={100}
-                height={100}
-                alt="Logo"
-              />
+        <div className="lg:hidden absolute text-right inset-0 w-full top-24 h-fit flex flex-col p-4 space-y-1 bg-black">
+          <div className="flex justify-center flex-col gap-y-5 py-5 text-white">
+            <Link
+              href="#users"
+              onClick={handleMenuToggle}
+              className="no-underline hover:text-colorB"
+            >
+              <span>Users</span>
             </Link>
-          </div> */}
-          <div className="flex justify-center flex-col gap-y-5 py-5">
-            <Link href="#" onClick={handleMenuToggle} className="no-underline">
+            <Link
+              href="#features"
+              onClick={handleMenuToggle}
+              className="no-underline hover:text-colorB"
+            >
               <span>Features</span>
             </Link>
-            <Link href="#" onClick={handleMenuToggle} className="no-underline">
-              <span>Premium</span>
+            <Link
+              href="#wishes"
+              onClick={handleMenuToggle}
+              className="no-underline hover:text-colorB"
+            >
+              <span>Wishes</span>
             </Link>
-            <Link href="#" onClick={handleMenuToggle} className="no-underline">
-              <span>Custom Bot</span>
-            </Link>
-            <Link href="#" onClick={handleMenuToggle} className="no-underline">
-              <span>Support Server</span>
+            <Link
+              href="#get-started"
+              onClick={handleMenuToggle}
+              className="no-underline hover:text-colorB"
+            >
+              <span>Get started</span>
             </Link>
           </div>
           <hr />
           <div className="flex justify-stretch flex-col gap-y-5 py-4 items-stretch text-center rounded-xl">
-          <span className="bg-colorB text-white font-bold text-sm rounded-xl items-center content-center cursor-pointer px-5 py-3">
-          Login
-        </span>
+            <span className="bg-colorB text-white font-bold text-sm rounded-xl items-center content-center cursor-pointer px-5 py-3">
+              Login
+            </span>
           </div>
         </div>
       )}

@@ -18,28 +18,33 @@ const Feature = () => {
   const activeFeatureImgUrl = activeFeatureData ? activeFeatureData.imgUrl : "";
 
   return (
-    <section className="flex flex-col lg:flex-row">
-      <div className="flex flex-row lg:flex-col flex-1 lg:flex-[0.4]">
-        {featureData.map((feature, index) => (
-          <SingleFeature
-            key={index}
-            title={feature.title}
-            description={feature.description}
-            active={feature.title === activeFeature}
-            onClick={() => handleFeatureClick(feature.title)}
-          />
-        ))}
+    <section id="features" className="my-16">
+      <div className="text-white flex justify-center lg:py-10">
+        <h1 className="font-bold text-3xl lg:text-5xl">Features</h1>
       </div>
-      <div className="flex-1 lg:flex-[0.6]">
-        {activeFeatureImgUrl && (
-          <Image
-            className="w-[95%] h-[70%]"
-            src={activeFeatureImgUrl}
-            width={600}
-            height={500}
-            alt="Feature Image"
-          />
-        )}
+      <div className="flex flex-col lg:flex-row gap-x-5 gap-y-5 w-full py-5 md:py-0 md:h-screen">
+        <div className="flex flex-row lg:flex-col items-center justify-center flex-1 lg:flex-[0.4] gap-x-4 pl-4 text-sm">
+          {featureData.map((feature, index) => (
+            <SingleFeature
+              key={index}
+              title={feature.title}
+              description={feature.description}
+              active={feature.title === activeFeature}
+              onClick={() => handleFeatureClick(feature.title)}
+            />
+          ))}
+        </div>
+        <div className="flex-1 lg:flex-[0.5]">
+          {activeFeatureImgUrl && (
+            <Image
+              className="w-[100%] h-[95%] px-3 lg:px-0 overflow-visible rounded-2xl shadow-md"
+              src={activeFeatureImgUrl}
+              width={600}
+              height={500}
+              alt="Feature Image"
+            />
+          )}
+        </div>
       </div>
     </section>
   );

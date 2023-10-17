@@ -1,7 +1,4 @@
-import img1 from "@/public/assets/birthday.webp";
-// import img1 from '@/public/assets/birthday.webp'
-// import img1 from '@/public/assets/birthday.webp'
-// import img1 from '@/public/assets/birthday.webp'
+import img1 from "@/public/assets/birthdayFeatureOne.avif";
 
 const userData = [
   {
@@ -26,5 +23,4 @@ const userData = [
   },
 ];
 
-
-export default userData
+export default userData;

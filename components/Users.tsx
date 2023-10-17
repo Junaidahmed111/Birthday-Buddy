@@ -3,8 +3,8 @@ import SingleUser from '@/components/SingleUser';
 
 const Users = () => {
   return (
-    <section>
-      <div className="font-bold text-xl flex justify-center">
+    <section id='users'>
+      <div className="font-bold text-xl flex justify-center py-6">
         <h3 className="text-white">
           Wished <span className="text-colorB">1 million</span> users worldwide
         </h3>

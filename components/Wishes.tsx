@@ -4,6 +4,7 @@ import { ImMenu } from "react-icons/im";
 
 const Wishes = () => {
   return (
+    <section id="wishes">
     <div className="p-5 text-white py-10">
       <div className="flex flex-col gap-y-4 md:items-center md:text-center">
         <h3 className="text-3xl font-bold lg:text-5xl ">
@@ -46,6 +47,7 @@ const Wishes = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

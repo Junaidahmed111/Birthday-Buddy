@@ -4,7 +4,7 @@ import { BsFillPlayFill } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <section className="w-full flex items-center justify-center text-center mt-10 lg:mt-0 lg:h-screen">
+    <section className="w-full flex items-center justify-center text-center mt-10 lg:mt-0 lg:h-[90vh]">
       <div className=" text-white p-12 pt-16 flex items-center gap-y-5 flex-col w-full lg:w-[80%]">
         <h1 className=" text-5xl lg:text-7xl ">
           Welcome to Your <br /> <span className="text-colorB">Birthday</span>{" "}

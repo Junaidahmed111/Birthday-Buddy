@@ -4,12 +4,14 @@ import Hero from "@/components/Hero";
 import Wishes from "@/components/Wishes";
 import Image from "next/image";
 import Feature from "@/components/Feature";
+import Users from "@/components/Users";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <Cards />
+      {/* <Cards /> */}
+      <Users/>
       <Feature />
       <Wishes />
       <CTA />
