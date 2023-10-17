@@ -8,7 +8,7 @@ const Hero = () => {
     <section className="w-full flex items-center justify-center text-center mt-10">
       <div className=" text-white p-12 pt-16 flex items-center gap-y-5 flex-col w-[60%]">
         <h1 className="text-7xl">
-          Welcome to Your <br /> <span className="text-colorB">Birthday</span>{" "}
+          Welcome to Your <br /> <span className="text-colorB" >Birthday</span>{" "}
           Buddy
         </h1>
         <p className="">
