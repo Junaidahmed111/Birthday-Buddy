@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "@/public/logo.jpg";
+import logo from "@/public/assets/logo.jpg";
 import Image from "next/image";
 import { BsTwitter, BsGithub } from "react-icons/bs";
 import { BiCopyright } from "react-icons/bi";
