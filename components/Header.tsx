@@ -15,7 +15,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="px-4 lg:px-8 flex items-center justify-between py-6 top-0 w-full bg-white">
+    <nav className="px-4 lg:px-8 flex items-center justify-between py-6 top-0 w-full">
       <div className="flex lg:flex-[0.2] items-center order-first">
         <div className="flex items-center pt-2">
           <div>
@@ -34,7 +34,7 @@ const Header = () => {
       </div>
 
 
-      <div className="hidden lg:flex flex-[0.6] items-center justify-center gap-x-3 lg:text-lg ">
+      <div className="hidden lg:flex flex-[0.6] items-center justify-center gap-x-3 lg:text-lg text-white ">
         <Link href="#" className="text-lg no-underline">
           <span>Features</span>
         </Link>
