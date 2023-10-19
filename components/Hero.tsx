@@ -18,7 +18,7 @@ const Hero = () => {
           <span className="bg-colorB text-white rounded-xl items-center justify-center text-center cursor-pointer text-sm md:text-md h-[7vh]  px-2 lg:py-5 flex gap-1 w-[50%] md:w-[20%] lg:h-[9vh]">
             <BsFillPlayFill /> Manage a server
           </span>
-          <span className="bg-'#17181E text-white rounded-xl items-center justify-center cursor-pointer text-sm md:text-md font-semibold h-[7vh]  px-2 lg:py-5 flex gap-1 w-[50%] md:w-[20%] lg:h-[9vh] ">
+          <span className="bg-'#17181E text-white rounded-xl items-center justify-center cursor-pointer text-sm md:text-md font-semibold h-[7vh] px-2 lg:py-5 flex gap-1 w-[50%] md:w-[20%] lg:h-[9vh] ">
             Manage a server
           </span>
         </div>
