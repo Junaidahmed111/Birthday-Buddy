@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
-import birthdayOne from "@/public/assets/birthday.webp";
 
 interface CardProps {
   heading: string;
