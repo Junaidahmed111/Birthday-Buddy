@@ -11,7 +11,13 @@ const Card = ({ heading, members, image }: CardProps) => {
   return (
     <>
       <div className="flex justify-center hover:scale-110 transition-all delay-[250] w-full cursor-pointer ">
-        <Image src={image} alt="birthday-pic" height={60} width={60} className="rounded-xl pr-1" />
+        <Image
+          className="aspect-square"
+          src={image}
+          alt="birthday-pic"
+          width={60}
+          height={60}
+        />
         <div className="bg-gray-700 rounded-lg px-10 lg:px-2 flex flex-col items-center justify-center">
           <h4>{heading}</h4>
           <span>{members}</span>
