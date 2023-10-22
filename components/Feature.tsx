@@ -18,7 +18,7 @@ const Feature = () => {
   const activeFeatureImgUrl = activeFeatureData ? activeFeatureData.imgUrl : "";
 
   return (
-    <section id="features" className="my-17">
+    <section id="features" className="my-16">
       <div className="text-white flex justify-center lg:py-14">
         <h1 className="font-bold text-3xl lg:text-5xl">Features</h1>
       </div>
