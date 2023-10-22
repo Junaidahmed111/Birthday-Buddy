@@ -34,7 +34,7 @@ const Feature = () => {
             />
           ))}
         </div>
-        <div className="flex-1 lg:flex-[0.5]">
+        <div className="flex-1 lg:flex-[0.6]">
           {activeFeatureImgUrl && (
             <Image
               className="w-full md:max-lg:h-[50%] h-[100%] px-5 lg:px-0 rounded-[5rem] lg:!rounded-2xl"
