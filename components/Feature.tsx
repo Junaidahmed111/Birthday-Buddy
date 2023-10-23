@@ -39,7 +39,7 @@ const Feature = () => {
             <Image
               className="w-full md:max-lg:h-[50%] h-[100%] px-5 lg:px-0 rounded-[5rem] lg:!rounded-2xl"
               src={activeFeatureImgUrl}
-              width={200}
+              width={2000}
               height={2000}
               alt="Feature Image"
             />
