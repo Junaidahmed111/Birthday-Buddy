@@ -23,8 +23,8 @@ const Header = () => {
               className="rounded-3xl"
               src={logo}
               alt="logo"
-              height={0}
-              width={60}
+              height={50}
+              width={50}
             />
           </div>
           <div className="px-3 py-3 font-bold">
